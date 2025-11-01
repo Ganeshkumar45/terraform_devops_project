@@ -1,0 +1,64 @@
+⚙️ Terraform Commands (FULL WORKFLOW)
+1️⃣ Initialize Terraform
+terraform init
+
+2️⃣ Validate configuration
+terraform validate
+
+3️⃣ See what will be created
+terraform plan
+
+4️⃣ Apply changes (deploy AWS resources)
+terraform apply -auto-approve
+
+5️⃣ View outputs
+terraform output
+
+
+Expected Output:
+
+vpc_id = vpc-xxxxxx
+ec2_public_ip = 3.x.x.x
+s3_bucket_name = terraform_devops_project-bucket
+
+6️⃣ SSH into EC2 instance
+ssh -i your-key.pem ubuntu@<ec2_public_ip>
+
+7️⃣ Destroy everything
+terraform destroy -auto-approve
+
+🚀 Push Project to GitHub
+1️⃣ Initialize Git
+git init
+
+2️⃣ Add files
+git add .
+
+3️⃣ Commit
+git commit -m "Terraform AWS modular project initial commit"
+
+4️⃣ Add remote
+git remote add origin https://github.com/Ganeshkumar45/terraform_devops_project.git
+
+5️⃣ Push code
+git branch -M main
+git push -u origin main
+
+
+When prompted:
+Username → Ganeshkumar45
+Password → (Your GitHub Personal Access Token)
+
+✅ Summary
+
+You now have:
+
+✅ Modular Terraform structure
+
+✅ AWS infra (VPC, EC2, S3, SG)
+
+✅ Reusable modules
+
+✅ Full command workflow
+
+✅ GitHub integration
